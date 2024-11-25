@@ -1,0 +1,32 @@
+<pre>
+    7.STRUCTURE AND UNION IN C 
+
+    #include<stdio.h>
+    #include<string.h>
+    Struct Data
+    {
+        int i;
+        float f;
+        char str[20];
+
+    };
+    union DataUnion
+    {
+        int i;
+        float f;
+        char str[20];
+    }
+    int main(){
+        union DataUnion MyUnion;
+        Struct DataMystruct={10,22.5,"hello world"};
+        printf("structure: %d,%f,%s \n",MyStruct.i,MyStruct.f,MyStruct.str);
+        MyUnion.f=220.5;
+        MyUnion.i=10;
+        printf("union(float): %f \n",MyUnion.f);
+        printf("union(int): %d \n",MyUnion.i);
+        return0;
+        
+
+    }
+
+</pre>

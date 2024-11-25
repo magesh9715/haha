@@ -1,0 +1,24 @@
+<PRE>
+
+    4. SINGLE DIMENSTIONAL AND MULTI-DIMENSIONAL ARRAY IN C 
+
+    #include<stdio.h>
+    void main(){
+        int matrix[2][3]={{1,2,3},{4,5,6}};
+        int arr[3]={1,2,3};
+        int i,j;
+        printf("elements in single dimentional array: \n");
+        for(j=0;j<3;j++){
+            printf("%d",arr[j]);
+        }
+        printf("\n\n");
+        printf("elements in multi dimentional array: \n");
+        for(i=0;i<2;i++){
+            for(j=0; j<3;j++){
+                printf("%d",matrix[i][j]);
+            }
+            printf("\n");
+            
+        }
+    }
+</PRE>

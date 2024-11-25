@@ -1,0 +1,17 @@
+<pre>
+    6. FUNCTIONS AND RECURSIVE FUNCTIONS 
+
+    #include<stdio.h>
+    int factorial(int n){
+        return(n<=1)?1:n*factorial(n-1);
+    }
+    void displayfactorial(int n){
+        printf("factorial of %d is %d \n",n,factorial(n));
+    }
+    int main(){
+        clrscr();
+        displayfactorial(5);
+        getch();
+        
+    }
+</pre>

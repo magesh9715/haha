@@ -1,0 +1,28 @@
+<pre>
+    6.	A c++ program in unary, binary and relational operator in one program showing operator overloading.
+
+#include <iostream.h>
+#include <conio.h>
+
+class Demo {
+    int value;
+public:
+    Demo(int v) : value(v) {}
+    Demo operator+(Demo obj) { return Demo(value + obj.value); } 
+    Demo operator-() { return Demo(-value); }                  
+    int operator>(Demo obj) { return value > obj.value; }      
+    void display() { cout << "Value: " << value << endl; }
+};
+
+void main() {
+    clrscr();
+    Demo obj1(10), obj2(20), obj3(0);
+    obj3 = obj1 + obj2;  
+    obj3.display();
+    obj3 = -obj1;        
+    obj3.display();
+    cout << "obj2 > obj1: " << (obj2 > obj1) << endl;
+    getch();
+}
+
+</pre>

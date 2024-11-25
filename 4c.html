@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+    }
+    .program {
+        display: none;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+    button {
+        margin: 5px 0;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+
+    <h2>
+    4. Inheritance:
+    </h2>
+    <button onclick="showProgram('program1')">1 - Single inheritance:</button>
+    <div id="program1" class="program">
+        <pre>
+            Program:
+            #include <iostream.h>
+            #include <conio.h>
+            
+            class Base {
+            public:
+                void show() { cout << "Single Inheritance: Base class" << endl; }
+            };
+            
+            class Derived : public Base {};
+            
+            void main() {
+                clrscr();
+                Derived obj;
+                obj.show();
+                getch();
+            }
+            
+        </pre>
+    </div><br>
+    <button onclick="showProgram('program2')">2 - Multiple inheritance:</button>
+    <div id="program2" class="program">
+        <pre>
+            #include <iostream.h>
+                #include <conio.h>
+                
+                class A {
+                public:
+                    void showA() { cout << "Class A" << endl; }
+                };
+                
+                class B {
+                public:
+                    void showB() { cout << "Class B" << endl; }
+                };
+                
+                class C : public A, public B {};
+                
+                void main() {
+                    clrscr();
+                    C obj;
+                    obj.showA();
+                    obj.showB();
+                    getch();
+                }
+        </pre>
+    </div><br>
+    <button onclick="showProgram('program3')">3 - Multilevel inheritance:</button>
+    <div id="program3" class="program">
+        <pre>
+            #include <iostream.h>
+                #include <conio.h>
+                
+                class A {
+                public:
+                    void showA() { cout << "Class A" << endl; }
+                };
+                
+                class B : public A {};
+                
+                class C : public B {};
+                
+                void main() {
+                    clrscr();
+                    C obj;
+                    obj.showA();
+                    getch();
+                }
+                
+        </pre>
+    </div><br>
+    <button onclick="showProgram('program4')">4 - Hierarchical inheritance:</button>
+    <div id="program4" class="program">
+        <pre>
+            #include <iostream.h>
+                #include <conio.h>
+                
+                class Base {
+                public:
+                    void show() { cout << "Base class" << endl; }
+                };
+                
+                class Derived1 : public Base {};
+                class Derived2 : public Base {};
+                
+                void main() {
+                    clrscr();
+                    Derived1 obj1;
+                    Derived2 obj2;
+                    obj1.show();
+                    obj2.show();
+                    getch();
+                }
+                
+        </pre>
+    </div><br>
+    <button onclick="showProgram('program5')">5 - Hybrid inheritance:</button>
+    <div id="program5" class="program">
+        <pre>
+            #include <iostream.h>
+                #include <conio.h>
+                
+                class A {
+                public:
+                    void showA() { cout << "Class A" << endl; }
+                };
+                
+                class B : public A {};
+                class C : public A {};
+                class D : public B, public C {};
+                
+                void main() {
+                    clrscr();
+                    D obj;
+                    obj.B::showA(); // Avoid ambiguity
+                    getch();
+                }
+        </pre>
+    </div>
+
+    <script>
+        function showProgram(id) {
+            const program = document.getElementById(id);
+            if (program.style.display === "none" || program.style.display === "") {
+                program.style.display = "block";
+            } else {
+                program.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

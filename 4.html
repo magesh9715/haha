@@ -1,0 +1,26 @@
+<pre>
+
+    5. STRING HANDLING FUNCTIONS IN C 
+
+    #include<stdio.h>
+    #include<string.h>
+    void main(){
+        char str[50]="hello,world!";
+        char tempstr[50];
+        strcpy(tempstr,str);
+        printf("copied string: %s \n",tempstr);
+        strcat(str,"how are you?");
+        printf("concatenated string: %s \n",str);
+        lenght=strlena(str);
+        printf("length of the string: %d \n",lenght);
+        strcpy(tempstr,"hello");
+        result=strcmp(str,tempstr);
+        if(result==0){
+            printf("strings are equal \n");
+        }elseif(result<0){
+            printf("string is len than 'hello' \n");
+        }esle{
+            printf("string is greater than 'hello' \n");
+        }
+    }
+</pre>

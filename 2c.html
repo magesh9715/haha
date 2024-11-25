@@ -1,0 +1,25 @@
+<pre>
+    2.A c++ program using constructor n destructor:
+    
+    #include <iostream.h>
+
+        class Example {
+        public:
+            Example() {
+                cout << "Constructor called: Object created!" << endl;
+            }
+        
+            // Destructor
+            ~Example() {
+                cout << "Destructor called: Object destroyed!" << endl;
+            }
+        };
+        
+        int main() {
+            cout << "Entering main function..." << endl;
+            Example obj;  // Object created, constructor is called
+            cout << "Object is in use." << endl;
+            return 0;  // Object goes out of scope, destructor is called
+        }
+        
+</pre>

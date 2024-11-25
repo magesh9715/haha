@@ -1,0 +1,37 @@
+<div class="container">
+    <button class="redirect-button" onclick="redirectToPage('1a.html')">1</button>
+    <button class="redirect-button" onclick="redirectToPage('1b.html')">2</button>
+    <button class="redirect-button" onclick="redirectToPage('2.html')">3</button>
+    <button class="redirect-button" onclick="redirectToPage('3.html')">4</button>
+    <button class="redirect-button" onclick="redirectToPage('4.html')">5</button>
+    <button class="redirect-button" onclick="redirectToPage('5.html')">6</button>
+    <button class="redirect-button" onclick="redirectToPage('6.html')">7</button>
+    <button class="redirect-button" onclick="redirectToPage('7.html')">8</button>
+    <button class="redirect-button" onclick="redirectToPage('8.html')">9</button>
+</div>
+<script>
+    function redirectToPage(page) {
+        if (page){window.location.href=page;}
+        else{alert('page not found');}
+    }
+
+</script>
+<style>
+    .redirect-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: backgroud-color 0.3s;
+}
+.redirect-button:hover{
+    background-color: #0056b3;
+}
+.container{
+    display: flex;
+    flex-direction: row;}
+</style>

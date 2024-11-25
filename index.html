@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="redirect-button" onclick="redirectToPage('c.html')">c</button>
+        <button class="redirect-button" onclick="redirectToPage('c++.html')">c++</button>
+    </div>
+    <script>
+        function redirectToPage(page) {
+            if (page){window.location.href=page;}
+            else{alert('page not found');}
+        }
+
+    </script>
+</body>
+</html>
