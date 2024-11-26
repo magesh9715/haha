@@ -11,15 +11,15 @@
         printf("copied string: %s \n",tempstr);
         strcat(str,"how are you?");
         printf("concatenated string: %s \n",str);
-        lenght=strlena(str);
-        printf("length of the string: %d \n",lenght);
+        int length=strlen(str);
+        printf("length of the string: %d \n",length);
         strcpy(tempstr,"hello");
-        result=strcmp(str,tempstr);
+        int result=strcmp(str,tempstr);
         if(result==0){
             printf("strings are equal \n");
-        }elseif(result<0){
+        }else if(result<0){
             printf("string is len than 'hello' \n");
-        }esle{
+        }else{
             printf("string is greater than 'hello' \n");
         }
     }
