@@ -1,11 +1,109 @@
 <pre>
-    1. I/O STATEMENTS AND EXPRESSIONS IN C
+    Print an Integer entered by an user
 
-    #include<stdio.h>
-        void main(){
-            int a,b;
-            printf("enter value for a & b :");
-            scanf("%d ""%d",&a,&b);
-            printf("Add: %d \n Sub: %d \n Mul: %d \n div: %d \n",a+b,a-b,a*b,a/b);
+import java.util.Scanner;
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+
+        int number = reader.nextInt();
+
+        // println() prints the following line to the output screen
+        System.out.println("You entered: " + number);
+    }
+}
+
+Program to Add Two Integers
+class Main {
+
+  public static void main(String[] args) {
+    
+    int first = 10;
+    int second = 20;
+
+    // add two numbers
+    int sum = first + second;
+    System.out.println(first + " + " + second + " = "  + sum);
+  }
+}
+
+ASCII value of a character
+public class AsciiValue 
+{
+    public static void main(String[] args) 
+{
+        char ch = 'a';
+        int ascii = ch;
+        int castAscii = (int) ch;
+        System.out.println("The ASCII value of " + ch + " is: " + ascii);
+        System.out.println("The ASCII value of " + ch + " is: " + castAscii);
+    }
+}
+
+
+Check whether a number is even or odd 
+import java.util.Scanner;
+
+public class EvenOdd {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
+
+
+Find Largest Among three numbers
+
+public class Largest {
+
+    public static void main(String[] args) {
+
+        double n1 = -4.5, n2 = 3.9, n3 = 2.5;
+
+        if( n1 >= n2 && n1 >= n3)
+            System.out.println(n1 + " is the largest number.");
+
+        else if (n2 >= n1 && n2 >= n3)
+            System.out.println(n2 + " is the largest number.");
+
+        else
+            System.out.println(n3 + " is the largest number.");
+    }
+}
+
+Check whether an alphabet is vowel or consonant 
+public class VowelConsonant {
+
+    public static void main(String[] args) {
+
+        char ch = 'z';
+
+        switch (ch) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println(ch + " is vowel");
+                break;
+            default:
+                System.out.println(ch + " is consonant");
         }
+    }
+}
+
+
 </pre>
